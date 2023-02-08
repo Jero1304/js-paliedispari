@@ -69,12 +69,16 @@ console.log('PARI E DISPARI');
 // console.log(pariOdispari);
 
 // let numeroUtente = prompt('inserisci un numero da 1 a 5');
-// console.log(numeroUtente);
+let numeroUtente = 2;
+console.log(numeroUtente);
 
 const MIN = 1;
 const MAX = 5;
-let numeroPc; 
-numeroRandom(numeroPc,MIN,MAX);
+let numeroPc = numeroRandom(MIN,MAX);
+console.log('numero pc:', numeroPc);
+
+let totale = sommaNumeri(numeroUtente,numeroPc);
+console.log('totale:',totale);
 
 
 
@@ -83,11 +87,17 @@ numeroRandom(numeroPc,MIN,MAX);
 /**********************************
 FUNCTION
 **********************************/
-function numeroRandom(numero, MINIMO, MAXIMO) {
+function numeroRandom(MINIMO, MAXIMO) {
     MAXIMO++;
-    numero = Math.floor(Math.random() * (MAXIMO - MINIMO) + MINIMO)
-    console.log(numero);
-    return  numero;
+    // numero = 
+    // console.log(numero);
+    return  Math.floor(Math.random() * (MAXIMO - MINIMO) + MINIMO);
+}
+
+function sommaNumeri(utente, pc) {
+    // console.log(utente, pc);
+    return utente + pc;
+
 }
 
 
