@@ -12,14 +12,17 @@ se la parola che ha inserito è palindroma oppure no
 
 console.log('PALINDROMA');
 
-// let palindroma = prompt('Inserisci la parola');
-let palindroma = 'anna'
-console.log('frase:',palindroma);
+// let word = 'anna'
+let word = prompt('Inserisci la parola');
+let palindroma = word.toLowerCase();
+console.log('parola:',palindroma);
 
 console.log('frase convertita in array:');
 converti(palindroma);
+
 console.log('frase invertita:'); 
 let paliInv=inverti(palindroma);
+
 console.log('risultato:');
 compara(palindroma,paliInv);
 
