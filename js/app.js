@@ -44,7 +44,7 @@ function inverti (original){
     console.log(inverted);
     return inverted;
 }
-function compara(verse, reverse ) {
+function compara(verse, reverse) {
     if(verse===reverse){
         console.log(true);
         console.log('la tua parola è palindroma!');
@@ -67,72 +67,72 @@ Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 Comunichiamo all’utente chi ha vinto. (decidete voi come)
 */
 
-// console.log('PARI E DISPARI');
+console.log('PARI E DISPARI');
 
 
-// let chose = prompt('pari o dispari?');
-// let sceltaUtente = chose.toLowerCase();
+let chose = prompt('pari o dispari?');
+let sceltaUtente = chose.toLowerCase();
 
-// while (sceltaUtente !== 'pari' && sceltaUtente !== 'dispari') {
-//     chose = prompt('pari o dispari?');
-//     sceltaUtente = chose.toLowerCase();
-// }
-// console.log('scelta utente:',sceltaUtente);  
+while (sceltaUtente !== 'pari' && sceltaUtente !== 'dispari') {
+    chose = prompt('pari o dispari?');
+    sceltaUtente = chose.toLowerCase();
+}
+console.log('scelta utente:',sceltaUtente);  
 
-// const MIN = 1;
-// const MAX = 5;
+const MIN = 1;
+const MAX = 5;
 
-// let numeroUtente = parseInt(prompt('inserisci un numero da 1 a 5'));
-// while (numeroUtente > MAX || numeroUtente < MIN || isNaN(numeroUtente)) {
-//     numeroUtente = parseInt(prompt('inserisci un numero da 1 a 5'));
-// }
-// console.log('numero utente:',numeroUtente);
+let numeroUtente = parseInt(prompt('inserisci un numero da 1 a 5'));
+while (numeroUtente > MAX || numeroUtente < MIN || isNaN(numeroUtente)) {
+    numeroUtente = parseInt(prompt('inserisci un numero da 1 a 5'));
+}
+console.log('numero utente:',numeroUtente);
 
-// let numeroPc = numeroRandom(MIN,MAX);
-// console.log('numero pc:', numeroPc);
+let numeroPc = numeroRandom(MIN,MAX);
+console.log('numero pc:', numeroPc);
 
-// let totale = sommaNumeri(numeroUtente,numeroPc);
-// console.log('totale:',totale);
+let totale = sommaNumeri(numeroUtente,numeroPc);
+console.log('totale:',totale);
 
-// let tipoNumero = pariOdispari(totale);
-// console.log('la somma è:',tipoNumero);
+let tipoNumero = pariOdispari(totale);
+console.log('la somma è:',tipoNumero);
 
-// let risposta = vittoria(tipoNumero,sceltaUtente)
-
-
+let risposta = vittoria(tipoNumero,sceltaUtente)
 
 
-// /**********************************
-// FUNCTION
-// **********************************/
-// function numeroRandom(MINIMO, MAXIMO) {
-//     MAXIMO++;
-//     return  Math.floor(Math.random() * (MAXIMO - MINIMO) + MINIMO);
-// }
 
-// function sommaNumeri(utente, pc) {
-//     return utente + pc;
-// }
 
-// function pariOdispari(num) {
-//     if(num % 2 === 0){
-//         let pari = 'pari';
-//         return pari;
-//     }else if( num % 2 === 1){
-//         let dispari = 'dispari';
-//         return dispari;
-//     }
-// }
+/**********************************
+FUNCTION
+**********************************/
+function numeroRandom(MINIMO, MAXIMO) {
+    MAXIMO++;
+    return  Math.floor(Math.random() * (MAXIMO - MINIMO) + MINIMO);
+}
 
-// function vittoria(numero, scelta) {
+function sommaNumeri(utente, pc) {
+    return utente + pc;
+}
 
-//     if (numero === scelta) {
-//         console.log('vince l\'utente');
-//     }else{
-//         console.log('vince il pc');
-//     }
+function pariOdispari(num) {
+    if(num % 2 === 0){
+        let pari = 'pari';
+        return pari;
+    }else if( num % 2 === 1){
+        let dispari = 'dispari';
+        return dispari;
+    }
+}
 
-// }
+function vittoria(numero, scelta) {
+
+    if (numero === scelta) {
+        console.log('vince l\'utente');
+    }else{
+        console.log('vince il pc');
+    }
+
+}
 
 
 
