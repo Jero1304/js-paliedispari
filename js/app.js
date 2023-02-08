@@ -7,11 +7,9 @@ Comunicare all’utente (decidete voi come)
 se la parola che ha inserito è palindroma oppure no
 */
 
-
-
-
+/**********************************
 console.log('PALINDROMA');
-
+//*********************************
 // let word = 'anna'
 let word = prompt('Inserisci la parola');
 let palindroma = word.toLowerCase();
@@ -25,17 +23,16 @@ let paliInv=inverti(palindroma);
 
 console.log('risultato:');
 compara(palindroma,paliInv);
+*/
 
-
-
-
-
-/*FUNCTION*/
+/**********************************
+FUNCTION
+**********************************/
+/*
 function converti (parola){
     const lettere = parola.split("");
     console.log(lettere,lettere.length);
 }
-
 function inverti (original){
     let inverted = '';
     for (let i = original.length - 1; i >= 0; i--) {
@@ -44,15 +41,16 @@ function inverti (original){
     console.log(inverted);
     return inverted;
 }
-
 function compara(verse, reverse ) {
     if(verse===reverse){
         console.log(true);
-
     }else{
         console.log(false);
         }
 }
+
+*/
+
 
 
 
@@ -65,4 +63,38 @@ Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 Comunichiamo all’utente chi ha vinto. (decidete voi come)
 */
 
-// console.log('PARI E DISPARI');
+console.log('PARI E DISPARI');
+
+// let pariOdispari = prompt('pari o dispari?');
+// console.log(pariOdispari);
+
+// let numeroUtente = prompt('inserisci un numero da 1 a 5');
+// console.log(numeroUtente);
+
+const MIN = 1;
+const MAX = 5;
+let numeroPc; 
+numeroRandom(numeroPc,MIN,MAX);
+
+
+
+
+
+/**********************************
+FUNCTION
+**********************************/
+function numeroRandom(numero, MINIMO, MAXIMO) {
+    MAXIMO++;
+    numero = Math.floor(Math.random() * (MAXIMO - MINIMO) + MINIMO)
+    console.log(numero);
+    return  numero;
+}
+
+
+
+
+
+
+
+
+
