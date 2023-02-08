@@ -13,14 +13,16 @@ se la parola che ha inserito è palindroma oppure no
 console.log('PALINDROMA');
 
 // let palindroma = prompt('Inserisci la parola');
-let palindroma = 'aernna'
+let palindroma = 'anna'
 console.log('frase:',palindroma);
 
 console.log('frase convertita in array:');
 converti(palindroma);
+console.log('frase invertita:'); 
+let paliInv=inverti(palindroma);
+console.log('risultato:');
+compara(palindroma,paliInv);
 
-console.log('frase invertita:');
-inverti(palindroma); 
 
 
 
@@ -38,6 +40,15 @@ function inverti (original){
     }
     console.log(inverted);
     return inverted;
+}
+
+function compara(verse, reverse ) {
+    if(verse===reverse){
+        console.log(true);
+
+    }else{
+        console.log(false);
+        }
 }
 
 
